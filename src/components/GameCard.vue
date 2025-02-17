@@ -12,11 +12,11 @@ const statuses: GameStatus[] = ['Backlog', 'Now Playing', 'Finished']
 </script>
 
 <template>
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+  <div class="bg-white text-black rounded-lg shadow-lg overflow-hidden">
     <img :src="game.image" :alt="game.title" class="w-full h-48 object-cover" />
     <div class="p-4">
-      <h3 class="text-lg font-bold">{{ game.title }}</h3>
-      <p v-if="game.subtitle" class="text-sm text-gray-600">{{ game.subtitle }}</p>
+      <h3 class="text-lg font-bold text-black">{{ game.title }}</h3>
+      <!-- <p v-if="game.subtitle" class="text-sm text-gray-600">{{ game.subtitle }}</p> -->
       <div class="mt-4">
         <select
           :value="game.status"
