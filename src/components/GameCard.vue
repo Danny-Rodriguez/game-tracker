@@ -20,7 +20,7 @@ const statuses: GameStatus[] = ['Backlog', 'Now Playing', 'Finished']
       <div class="mt-4">
         <select
           :value="game.status"
-          @change="(e) => store.updateGameStatus(game.id, e.target.value as GameStatus)"
+          @change="(e: Event) => store.updateGameStatus(game.id, (e.target as HTMLSelectElement).value as GameStatus)"
           class="w-full p-2 border rounded bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option v-for="status in statuses" :key="status" :value="status">
