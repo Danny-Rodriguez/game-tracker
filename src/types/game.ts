@@ -71,5 +71,5 @@ export const INITIAL_GAMES: Game[] = [
     subtitle: 'Mutant Apocalypse',
     image: '/assets/games/x-men-mutant-apocalypse.jpg',
     status: 'Backlog'
-  }
+  },
 ];

@@ -2,7 +2,7 @@
 import type { Game, GameStatus } from '@/types/game'
 import { useGameStore } from '@/stores/games'
 
-const props = defineProps<{
+defineProps<{
   game: Game
 }>()
 
